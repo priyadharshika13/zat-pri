@@ -1,0 +1,5 @@
+clearance         : @{clearance_status=REJECTED; clearance_uuid=550e8400-e29b-41d4-a716-446655440000; qr_code=;
+                    reporting_status=}
+processed_at      : 2026-01-26T16:16:19.695807
+errors            :
+validation_result :

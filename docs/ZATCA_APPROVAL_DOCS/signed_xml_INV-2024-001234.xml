@@ -1,0 +1,137 @@
+</Invoice>; xml_hash=ea773317cd577c2ffb4c27f928b014cfbe22c58b71feffca10531d0728530f9a;
+                    signed_xml=<?xml version='1.0' encoding='utf-8'?>
+                    <ns0:Invoice xmlns:ns0="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+                    xmlns:ns1="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                    xmlns:ns3="http://www.w3.org/2000/09/xmldsig#">
+                      <ns1:ID>INV-2024-001234</ns1:ID>
+                      <ns1:IssueDate>2024-01-15</ns1:IssueDate>
+                      <ns1:IssueTime>10:30:00</ns1:IssueTime>
+                      <ns1:InvoiceTypeCode>388</ns1:InvoiceTypeCode>
+                      <ns1:UUID>550e8400-e29b-41d4-a716-446655440000</ns1:UUID>
+                      <ns2:AccountingSupplierParty>
+                        <ns2:Party>
+                          <ns2:PartyName>
+                            <ns1:Name>Example Trading Company Ltd</ns1:Name>
+                          </ns2:PartyName>
+                          <ns2:PartyTaxScheme>
+                            <ns1:CompanyID>123456789012345</ns1:CompanyID>
+                          </ns2:PartyTaxScheme>
+                          <ns2:PostalAddress>
+                            <ns1:StreetName>123 Business Street, Riyadh, Saudi Arabia</ns1:StreetName>
+                          </ns2:PostalAddress>
+                        </ns2:Party>
+                      </ns2:AccountingSupplierParty>
+                      <ns2:AccountingCustomerParty>
+                        <ns2:Party>
+                          <ns2:PartyName>
+                            <ns1:Name>Customer Name</ns1:Name>
+                          </ns2:PartyName>
+                          <ns2:PartyTaxScheme>
+                            <ns1:CompanyID>987654321098765</ns1:CompanyID>
+                          </ns2:PartyTaxScheme>
+                        </ns2:Party>
+                      </ns2:AccountingCustomerParty>
+                      <ns2:InvoiceLine>
+                        <ns1:ID>1</ns1:ID>
+                        <ns1:InvoicedQuantity unitCode="C62">2.0</ns1:InvoicedQuantity>
+                        <ns2:Item>
+                          <ns1:Name>Product A</ns1:Name>
+                        </ns2:Item>
+                        <ns2:Price>
+                          <ns1:PriceAmount currencyID="SAR">100.00</ns1:PriceAmount>
+                        </ns2:Price>
+                        <ns2:TaxTotal>
+                          <ns1:TaxAmount currencyID="SAR">30.00</ns1:TaxAmount>
+                          <ns2:TaxSubtotal>
+                            <ns1:TaxableAmount currencyID="SAR">200.00</ns1:TaxableAmount>
+                            <ns1:TaxAmount currencyID="SAR">30.00</ns1:TaxAmount>
+                            <ns2:TaxCategory>
+                              <ns1:ID>S</ns1:ID>
+                              <ns1:Percent>15.00</ns1:Percent>
+                            </ns2:TaxCategory>
+                          </ns2:TaxSubtotal>
+                        </ns2:TaxTotal>
+                      </ns2:InvoiceLine>
+                      <ns2:InvoiceLine>
+                        <ns1:ID>2</ns1:ID>
+                        <ns1:InvoicedQuantity unitCode="C62">1.0</ns1:InvoicedQuantity>
+                        <ns2:Item>
+                          <ns1:Name>Service B</ns1:Name>
+                        </ns2:Item>
+                        <ns2:Price>
+                          <ns1:PriceAmount currencyID="SAR">50.00</ns1:PriceAmount>
+                        </ns2:Price>
+                        <ns2:AllowanceCharge>
+                          <ns1:ChargeIndicator>false</ns1:ChargeIndicator>
+                          <ns1:Amount currencyID="SAR">5.00</ns1:Amount>
+                        </ns2:AllowanceCharge>
+                        <ns2:TaxTotal>
+                          <ns1:TaxAmount currencyID="SAR">6.75</ns1:TaxAmount>
+                          <ns2:TaxSubtotal>
+                            <ns1:TaxableAmount currencyID="SAR">45.00</ns1:TaxableAmount>
+                            <ns1:TaxAmount currencyID="SAR">6.75</ns1:TaxAmount>
+                            <ns2:TaxCategory>
+                              <ns1:ID>S</ns1:ID>
+                              <ns1:Percent>15.00</ns1:Percent>
+                            </ns2:TaxCategory>
+                          </ns2:TaxSubtotal>
+                        </ns2:TaxTotal>
+                      </ns2:InvoiceLine>
+                      <ns2:LegalMonetaryTotal>
+                        <ns1:TaxExclusiveAmount currencyID="SAR">245.00</ns1:TaxExclusiveAmount>
+                        <ns1:TaxInclusiveAmount currencyID="SAR">281.75</ns1:TaxInclusiveAmount>
+                        <ns1:PayableAmount currencyID="SAR">281.75</ns1:PayableAmount>
+                      </ns2:LegalMonetaryTotal>
+                      <ns2:TaxTotal>
+                        <ns1:TaxAmount currencyID="SAR">36.75</ns1:TaxAmount>
+                        <ns2:TaxSubtotal>
+                          <ns1:TaxableAmount currencyID="SAR">245.00</ns1:TaxableAmount>
+                          <ns1:TaxAmount currencyID="SAR">36.75</ns1:TaxAmount>
+                          <ns2:TaxCategory>
+                            <ns1:ID>S</ns1:ID>
+                            <ns1:Percent>15.00</ns1:Percent>
+                          </ns2:TaxCategory>
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                      </ns2:TaxTotal>
+                    <ns3:Signature><ns3:SignedInfo><ns3:CanonicalizationMethod
+                    Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ns3:SignatureMethod
+                    Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ns3:Reference
+                    URI=""><ns3:Transforms><ns3:Transform
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                      </ns2:TaxTotal>
+                    <ns3:Signature><ns3:SignedInfo><ns3:CanonicalizationMethod
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                          </ns2:TaxCategory>
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                          </ns2:TaxCategory>
+                          </ns2:TaxCategory>
+                          </ns2:TaxCategory>
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                      </ns2:TaxTotal>
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                          </ns2:TaxCategory>
+                        </ns2:TaxSubtotal>
+                      </ns2:TaxTotal>
+                    <ns3:Signature><ns3:SignedInfo><ns3:CanonicalizationMethod
+                    Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ns3:SignatureMethod
+                    Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ns3:Reference
+                    URI=""><ns3:Transforms><ns3:Transform
+                    Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                    Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ns3:Reference
+                    URI=""><ns3:Transforms><ns3:Transform
+                    Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                    Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                    /></ns3:Transforms><ns3:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ns3:Dige
+                    stValue>49jvbIL2o2NCT7LdI7ig7TzLVCKlMm/2bZGfJTJmq5Q=</ns3:DigestValue></ns3:Reference></ns3:SignedIn
+                    /></ns3:Transforms><ns3:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ns3:Dige
+                    stValue>49jvbIL2o2NCT7LdI7ig7TzLVCKlMm/2bZGfJTJmq5Q=</ns3:DigestValue></ns3:Reference></ns3:SignedIn
+                    stValue>49jvbIL2o2NCT7LdI7ig7TzLVCKlMm/2bZGfJTJmq5Q=</ns3:DigestValue></ns3:Reference></ns3:SignedIn
+                    fo><ns3:SignatureValue>U0FOREJPWF9TSUdOQVRVUkVf49jvbIL2o2NCT7LdI7ig7Q==</ns3:SignatureValue></ns3:Si
+                    gnature></ns0:Invoice>; digital_signature=U0FOREJPWF9TSUdOQVRVUkVf49jvbIL2o2NCT7LdI7ig7Q==}

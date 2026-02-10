@@ -1,0 +1,25 @@
+fastapi>=0.109.0,<0.110.0  # Updated for Pydantic 2.5 compatibility (fixes FieldInfo.in_ error)
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+email-validator>=2.0.0
+httpx==0.25.2
+qrcode[pil]==7.4.2
+python-multipart==0.0.6
+cryptography>=41.0.0
+lxml>=5.0.0  # W3C C14N for ZATCA XML signing
+openai>=1.0.0
+alembic>=1.13.0
+sqlalchemy>=2.0.0
+# PostgreSQL drivers
+psycopg2-binary>=2.9.9  # Sync driver for SQLAlchemy
+asyncpg>=0.29.0  # Async driver (optional, for future async support)
+
+# Testing dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.12.0
+httpx>=0.25.2  # Already included, but needed for async test client
+

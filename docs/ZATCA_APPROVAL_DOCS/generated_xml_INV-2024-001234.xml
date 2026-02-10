@@ -1,0 +1,94 @@
+xml_data          : @{xml_content=<?xml version="1.0" encoding="UTF-8"?>
+                    <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+                             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"        
+                             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+                      <cbc:ID>INV-2024-001234</cbc:ID>
+                      <cbc:IssueDate>2024-01-15</cbc:IssueDate>
+                      <cbc:IssueTime>10:30:00</cbc:IssueTime>
+                      <cbc:InvoiceTypeCode>388</cbc:InvoiceTypeCode>
+                      <cbc:UUID>550e8400-e29b-41d4-a716-446655440000</cbc:UUID>
+                      <cac:AccountingSupplierParty>
+                        <cac:Party>
+                          <cac:PartyName>
+                            <cbc:Name>Example Trading Company Ltd</cbc:Name>
+                          </cac:PartyName>
+                          <cac:PartyTaxScheme>
+                            <cbc:CompanyID>123456789012345</cbc:CompanyID>
+                          </cac:PartyTaxScheme>
+                          <cac:PostalAddress>
+                            <cbc:StreetName>123 Business Street, Riyadh, Saudi Arabia</cbc:StreetName>
+                          </cac:PostalAddress>
+                        </cac:Party>
+                      </cac:AccountingSupplierParty>
+                      <cac:AccountingCustomerParty>
+                        <cac:Party>
+                          <cac:PartyName>
+                            <cbc:Name>Customer Name</cbc:Name>
+                          </cac:PartyName>
+                          <cac:PartyTaxScheme>
+                            <cbc:CompanyID>987654321098765</cbc:CompanyID>
+                          </cac:PartyTaxScheme>
+                        </cac:Party>
+                      </cac:AccountingCustomerParty>
+                      <cac:InvoiceLine>
+                        <cbc:ID>1</cbc:ID>
+                        <cbc:InvoicedQuantity unitCode="C62">2.0</cbc:InvoicedQuantity>
+                        <cac:Item>
+                          <cbc:Name>Product A</cbc:Name>
+                        </cac:Item>
+                        <cac:Price>
+                          <cbc:PriceAmount currencyID="SAR">100.00</cbc:PriceAmount>
+                        </cac:Price>
+                        <cac:TaxTotal>
+                          <cbc:TaxAmount currencyID="SAR">30.00</cbc:TaxAmount>
+                          <cac:TaxSubtotal>
+                            <cbc:TaxableAmount currencyID="SAR">200.00</cbc:TaxableAmount>
+                            <cbc:TaxAmount currencyID="SAR">30.00</cbc:TaxAmount>
+                            <cac:TaxCategory>
+                              <cbc:ID>S</cbc:ID>
+                              <cbc:Percent>15.00</cbc:Percent>
+                            </cac:TaxCategory>
+                          </cac:TaxSubtotal>
+                        </cac:TaxTotal>
+                      </cac:InvoiceLine>
+                      <cac:InvoiceLine>
+                        <cbc:ID>2</cbc:ID>
+                        <cbc:InvoicedQuantity unitCode="C62">1.0</cbc:InvoicedQuantity>
+                        <cac:Item>
+                          <cbc:Name>Service B</cbc:Name>
+                        </cac:Item>
+                        <cac:Price>
+                          <cbc:PriceAmount currencyID="SAR">50.00</cbc:PriceAmount>
+                        </cac:Price>
+                        <cac:AllowanceCharge>
+                          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                          <cbc:Amount currencyID="SAR">5.00</cbc:Amount>
+                        </cac:AllowanceCharge>
+                        <cac:TaxTotal>
+                          <cbc:TaxAmount currencyID="SAR">6.75</cbc:TaxAmount>
+                          <cac:TaxSubtotal>
+                            <cbc:TaxableAmount currencyID="SAR">45.00</cbc:TaxableAmount>
+                            <cbc:TaxAmount currencyID="SAR">6.75</cbc:TaxAmount>
+                            <cac:TaxCategory>
+                              <cbc:ID>S</cbc:ID>
+                              <cbc:Percent>15.00</cbc:Percent>
+                            </cac:TaxCategory>
+                          </cac:TaxSubtotal>
+                        </cac:TaxTotal>
+                      </cac:InvoiceLine>
+                      <cac:LegalMonetaryTotal>
+                        <cbc:TaxExclusiveAmount currencyID="SAR">245.00</cbc:TaxExclusiveAmount>
+                        <cbc:TaxInclusiveAmount currencyID="SAR">281.75</cbc:TaxInclusiveAmount>
+                        <cbc:PayableAmount currencyID="SAR">281.75</cbc:PayableAmount>
+                      </cac:LegalMonetaryTotal>
+                      <cac:TaxTotal>
+                        <cbc:TaxAmount currencyID="SAR">36.75</cbc:TaxAmount>
+                        <cac:TaxSubtotal>
+                          <cbc:TaxableAmount currencyID="SAR">245.00</cbc:TaxableAmount>
+                          <cbc:TaxAmount currencyID="SAR">36.75</cbc:TaxAmount>
+                          <cac:TaxCategory>
+                            <cbc:ID>S</cbc:ID>
+                            <cbc:Percent>15.00</cbc:Percent>
+                          </cac:TaxCategory>
+                        </cac:TaxSubtotal>
+                      </cac:TaxTotal>

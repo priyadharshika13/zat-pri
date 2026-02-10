@@ -1,0 +1,29 @@
+{
+  "mode": "PHASE_2",
+  "environment": "SANDBOX",
+  "invoice_number": "INV-2024-0001",
+  "invoice_date": "2024-01-15T10:30:00",
+  "invoice_type": "388",
+  "seller_name": "Smart Green Solutions LLC",
+  "seller_tax_number": "310123456700003",
+  "seller_address": "Riyadh, Saudi Arabia",
+  "buyer_name": "Test Customer",
+  "buyer_tax_number": "300987654300003",
+  "line_items": [
+    {
+      "name": "Consulting Service",
+      "quantity": 1,
+      "unit_price": 100.00,
+      "tax_rate": 15,
+      "tax_category": "S",
+      "discount": 0
+    }
+  ],
+  "total_discount": 0,
+  "total_tax_exclusive": 100.00,
+  "total_tax_amount": 15.00,
+  "total_amount": 115.00,
+  "uuid": "9f1c1f26-8a2e-4c5d-bb6a-1a7a5f12b001",
+  "previous_invoice_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+}
+
