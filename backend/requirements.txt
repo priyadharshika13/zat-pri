@@ -1,9 +1,10 @@
 fastapi>=0.109.0,<0.110.0  # Updated for Pydantic 2.5 compatibility (fixes FieldInfo.in_ error)
 uvicorn[standard]==0.24.0
 gunicorn==21.2.0
-pydantic==2.6.4
-pydantic-core==2.16.3
 fastapi>=0.110
+pydantic==2.7.4
+pydantic-core==2.18.4
+
 pydantic-settings==2.1.0
 email-validator>=2.0.0
 httpx==0.25.2
