@@ -1,0 +1,76 @@
+[run]
+# Coverage configuration for ZATCA AI API
+
+# Source code to cover
+source = backend/app
+
+# Omit patterns (files/directories to exclude from coverage)
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */__init__.py
+    */migrations/*
+    */alembic/*
+    */venv/*
+    */env/*
+    */virtualenv/*
+    */site-packages/*
+    */dist/*
+    */build/*
+    */egg-info/*
+    */conftest.py
+    */main.py
+    */settings.py
+    */config.py
+
+# Branch coverage
+branch = True
+
+# Parallel execution
+parallel = False
+
+[report]
+# Report configuration
+
+# Precision for percentages
+precision = 2
+
+# Show missing line numbers
+show_missing = True
+
+# Skip empty files
+skip_empty = True
+
+# Exclude lines from coverage
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+    
+    # Don't complain about missing debug-only code
+    def __repr__
+    def __str__
+    
+    # Don't complain if tests don't hit defensive assertion code
+    raise AssertionError
+    raise NotImplementedError
+    
+    # Don't complain if non-runnable code isn't run
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    
+    # Don't count imports
+    ^\s*import 
+    ^\s*from .* import
+    
+    # Don't count pass statements
+    ^\s*pass\s*$
+
+[html]
+# HTML report configuration
+directory = htmlcov
+
+[ xml ]
+# XML report configuration
+output = coverage.xml
+
