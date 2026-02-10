@@ -33,7 +33,7 @@ def create_application() -> FastAPI:
     application = FastAPI(
         title="ZATCA Compliance API",
         version="1.0.0",
-        docs_url="/docs" if settings.enable_docs else None,
+        docs_url="/docs" ,
         redoc_url=None,
         openapi_url="/openapi.json" if settings.enable_docs else None,
     )
@@ -49,7 +49,7 @@ def create_application() -> FastAPI:
             "api_version": "v1",
             "api_base_url": "/api/v1",
             "health_check": "/api/v1/system/health",
-            "docs": "/docs" if settings.enable_docs else "disabled",
+            "docs": "/docs",
             "message": "Welcome to ZATCA Compliance API. Use /api/v1 endpoints to interact with the API."
         }
 
