@@ -78,7 +78,7 @@ export const generateCsr = async (data: CsrGenerateRequest): Promise<CsrGenerate
 
   // For FormData, we need to manually construct the request to avoid setting Content-Type
   const apiKey = (await import('./auth')).getApiKey();
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://zat-pri.onrender.com';
   
   const headers: Record<string, string> = {};
   if (apiKey) {
@@ -114,7 +114,7 @@ export const uploadCsid = async (
 
   // For FormData, we need to manually construct the request to avoid setting Content-Type
   const apiKey = (await import('./auth')).getApiKey();
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://zat-pri.onrender.com';
   
   const headers: Record<string, string> = {};
   if (apiKey) {

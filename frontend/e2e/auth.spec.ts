@@ -6,7 +6,7 @@ import { route, waitForPageRoot } from './helpers';
  *
  * Tests protected route access control.
  * Assumes user is already authenticated via auth.setup.ts storageState.
- * App uses HashRouter: URLs are like http://localhost:5173/#/dashboard
+ * App uses HashRouter: URLs are like https://zat-pri.vercel.app//#/dashboard
  */
 
 test.describe('Authentication', () => {

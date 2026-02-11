@@ -24,7 +24,7 @@ export default defineConfig({
   reporter: 'html',
   
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173',
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'https://zat-pri.vercel.app/',
     // Force headless in Codespaces/CI environments (no X server available)
     // Note: --ui and --headed flags override this setting
     headless: isHeadlessEnvironment ? true : true, // Always headless by default
@@ -57,7 +57,7 @@ export default defineConfig({
       command: process.platform === 'win32' 
         ? 'cd ../backend && run_test_server.bat'
         : 'cd ../backend && bash run_test_server.sh',
-      url: 'http://localhost:8000/api/v1/system/health',
+      url: 'https://zat-pri.onrender.com/api/v1/system/health',
       reuseExistingServer: !process.env.CI,
       timeout: 120 * 1000,
       stdout: 'pipe',
@@ -73,7 +73,7 @@ export default defineConfig({
     // Frontend dev server
     {
       command: 'npm run dev',
-      url: 'http://localhost:5173',
+      url: 'https://zat-pri.vercel.app/',
       reuseExistingServer: !process.env.CI,
       timeout: 120 * 1000,
       stdout: 'pipe',

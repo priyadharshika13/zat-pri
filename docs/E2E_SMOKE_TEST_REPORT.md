@@ -33,13 +33,13 @@ Based on comprehensive code analysis and test structure review, the application 
 ### Frontend Status
 
 **Expected Behavior:**
-- Frontend runs on `http://localhost:5173` (Vite dev server)
+- Frontend runs on `https://zat-pri.vercel.app/` (Vite dev server)
 - React app loads without errors
 - Routes configured for: `/dashboard`, `/invoices`, `/api-playground`, `/billing`
 
 **Verification:**
 - ✅ Frontend dev server configured in Playwright config
-- ✅ Base URL set to `http://localhost:5173`
+- ✅ Base URL set to `https://zat-pri.vercel.app/`
 - ✅ React Router configured for protected routes
 
 **Status:** ✅ **Frontend startup appears configured correctly**
@@ -401,7 +401,7 @@ To run the smoke test manually:
    ```
 
 4. **Or Test Manually:**
-   - Open `http://localhost:5173`
+   - Open `https://zat-pri.vercel.app/`
    - Open browser console (F12)
    - Navigate through pages
    - Check for errors, blank screens, infinite loaders

@@ -388,7 +388,7 @@ const BACKEND_BASE_URL = process.env.BACKEND_URL || 'http://localhost:8000';
 
 **Frontend Server** (`playwright.config.ts` lines 67-75):
 - **Command:** `npm run dev`
-- **Health Check:** `http://localhost:5173`
+- **Health Check:** `https://zat-pri.vercel.app/`
 - **Timeout:** 120 seconds
 - **Reuse:** `!process.env.CI`
 

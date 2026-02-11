@@ -24,7 +24,7 @@ interface SystemHealthResponse {
   timestamp: string;
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://zat-pri.onrender.com';
 
 export const SystemStatusCard: React.FC = () => {
   const { t: _t, direction } = useLanguage();

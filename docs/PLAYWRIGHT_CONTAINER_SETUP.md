@@ -55,7 +55,7 @@ Your `playwright.config.ts` is correctly configured:
 ```typescript
 // ✅ Headless by default (no GUI needed)
 use: {
-  baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173',
+  baseURL: process.env.PLAYWRIGHT_BASE_URL || 'https://zat-pri.vercel.app/',
   trace: 'on-first-retry',
   screenshot: 'only-on-failure',
 },
@@ -160,7 +160,7 @@ jobs:
         run: npm run test:e2e
         env:
           CI: true
-          PLAYWRIGHT_BASE_URL: http://localhost:5173
+          PLAYWRIGHT_BASE_URL: https://zat-pri.vercel.app/
       
       - name: Upload test results
         if: always()
@@ -183,7 +183,7 @@ You can make the config more explicit about headless mode:
 
 ```typescript
 use: {
-  baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173',
+  baseURL: process.env.PLAYWRIGHT_BASE_URL || 'https://zat-pri.vercel.app/',
   headless: true, // Explicit (default, but makes intent clear)
   trace: 'on-first-retry',
   screenshot: 'only-on-failure',

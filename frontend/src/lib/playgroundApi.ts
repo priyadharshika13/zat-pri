@@ -103,7 +103,7 @@ export const executePlaygroundRequest = async (
  * Generate curl command from request.
  */
 export const generateCurlCommand = (request: PlaygroundRequest, apiKey: string): string => {
-  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'https://zat-pri.onrender.com';
   let url = `${baseUrl}${request.endpoint}`;
   
   // Add query params

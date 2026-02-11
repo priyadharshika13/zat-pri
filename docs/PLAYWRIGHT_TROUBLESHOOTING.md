@@ -211,7 +211,7 @@ curl http://localhost:8000/api/v1/system/health
 
 ### Check Frontend
 ```bash
-curl http://localhost:5173
+curl https://zat-pri.vercel.app/
 # Should return HTML
 ```
 

@@ -35,10 +35,10 @@ curl -H "X-API-Key: test-key" http://localhost:8000/api/v1/tenants/me
 ### Check if frontend is running
 ```bash
 # Windows PowerShell
-Invoke-WebRequest -Uri http://localhost:5173 -UseBasicParsing
+Invoke-WebRequest -Uri https://zat-pri.vercel.app/ -UseBasicParsing
 
 # Linux/Mac
-curl http://localhost:5173
+curl https://zat-pri.vercel.app/
 ```
 
 ---
@@ -101,7 +101,7 @@ npx playwright test
 ## 5. Manual Browser Verification
 
 ### Quick Checklist
-1. Open browser: `http://localhost:5173`
+1. Open browser: `https://zat-pri.vercel.app/`
 2. Open Developer Console (F12)
 3. Check Console tab for errors
 4. Navigate to:
@@ -150,7 +150,7 @@ python -c "from app.db.session import SessionLocal; from app.models.api_key impo
 $backend = try { (Invoke-WebRequest -Uri http://localhost:8000/api/v1/system/health -UseBasicParsing).StatusCode } catch { "Not running" }; Write-Host "Backend: $backend"
 
 # Check frontend
-$frontend = try { (Invoke-WebRequest -Uri http://localhost:5173 -UseBasicParsing).StatusCode } catch { "Not running" }; Write-Host "Frontend: $frontend"
+$frontend = try { (Invoke-WebRequest -Uri https://zat-pri.vercel.app/ -UseBasicParsing).StatusCode } catch { "Not running" }; Write-Host "Frontend: $frontend"
 ```
 
 ### Linux/Mac
@@ -159,7 +159,7 @@ $frontend = try { (Invoke-WebRequest -Uri http://localhost:5173 -UseBasicParsing
 echo "Backend: $(curl -s -o /dev/null -w '%{http_code}' http://localhost:8000/api/v1/system/health || echo 'Not running')"
 
 # Check frontend
-echo "Frontend: $(curl -s -o /dev/null -w '%{http_code}' http://localhost:5173 || echo 'Not running')"
+echo "Frontend: $(curl -s -o /dev/null -w '%{http_code}' https://zat-pri.vercel.app/ || echo 'Not running')"
 ```
 
 ---
@@ -194,7 +194,7 @@ if ($backendHealth) {
 # Check frontend
 Write-Host "Checking frontend..." -ForegroundColor Yellow
 $frontendHealth = try {
-    $response = Invoke-WebRequest -Uri http://localhost:5173 -UseBasicParsing
+    $response = Invoke-WebRequest -Uri https://zat-pri.vercel.app/ -UseBasicParsing
     Write-Host "✅ Frontend is running (Status: $($response.StatusCode))" -ForegroundColor Green
     $true
 } catch {
@@ -233,7 +233,7 @@ fi
 
 # Check frontend
 echo "Checking frontend..."
-if curl -s -f http://localhost:5173 > /dev/null; then
+if curl -s -f https://zat-pri.vercel.app/ > /dev/null; then
     echo "✅ Frontend is running"
 else
     echo "❌ Frontend is not running"
@@ -299,7 +299,7 @@ python -m uvicorn --version
 | Start backend | `cd backend && run_test_server.bat` (Windows) or `bash run_test_server.sh` (Linux/Mac) |
 | Start frontend | `cd frontend && npm run dev` |
 | Check backend | `curl http://localhost:8000/api/v1/system/health` |
-| Check frontend | `curl http://localhost:5173` |
+| Check frontend | `curl https://zat-pri.vercel.app/` |
 | Run smoke test | `cd frontend && npx playwright test smoke-test.spec.ts` |
 | Test auth | `curl -H "X-API-Key: test-key" http://localhost:8000/api/v1/tenants/me` |
 

@@ -9,7 +9,7 @@ import { route, waitForPageRoot, PAGE_ROOTS } from './helpers';
  * No networkidle; stable waits on React-rendered roots.
  */
 
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:8000';
+const BACKEND_URL = process.env.BACKEND_URL || 'https://zat-pri.onrender.com';
 const TEST_API_KEY = 'test-key';
 
 test.describe('E2E Smoke Test - User Perspective', () => {

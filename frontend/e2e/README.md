@@ -128,7 +128,7 @@ This opens the test report in your browser (works in Codespaces via port forward
 
 Configuration is in `playwright.config.ts`:
 
-- **Base URL:** `http://localhost:5173` (Vite dev server)
+- **Base URL:** `https://zat-pri.vercel.app/` (Vite dev server)
 - **Headless:** `true` by default
 - **Retries:** 2 retries in CI, 0 locally
 - **Workers:** 1 in CI, parallel locally
@@ -138,8 +138,8 @@ Configuration is in `playwright.config.ts`:
 Set these if needed:
 
 - `TEST_API_KEY`: API key for authentication (default: `test-api-key-valid`)
-- `API_BASE_URL`: Backend API URL (default: `http://localhost:8000`)
-- `PLAYWRIGHT_BASE_URL`: Frontend URL (default: `http://localhost:5173`)
+- `API_BASE_URL`: Backend API URL (default: `https://zat-pri.onrender.com`)
+- `PLAYWRIGHT_BASE_URL`: Frontend URL (default: `https://zat-pri.vercel.app/`)
 
 ## Writing New Tests
 

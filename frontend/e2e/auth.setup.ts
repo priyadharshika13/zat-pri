@@ -23,7 +23,7 @@ import { test as setup, expect } from '@playwright/test';
  */
 
 const SEEDED_API_KEY = 'test-key'; // Matches backend seed: tenant_seed_service.py
-const BACKEND_BASE_URL = 'http://localhost:8000';
+const BACKEND_BASE_URL = 'https://zat-pri.onrender.com';
 const STORAGE_STATE_PATH = 'e2e/.auth/state.json';
 const MAX_RETRIES = 20; // Maximum 20 seconds wait
 const RETRY_DELAY_MS = 1000; // Retry every 1 second

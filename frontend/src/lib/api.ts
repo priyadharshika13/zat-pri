@@ -9,7 +9,7 @@ import { getApiKey, clearApiKey } from './auth';
 
 // Get base URL from environment variable
 // For Vite, use VITE_ prefix
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://zat-pri.onrender.com';
 
 export interface ApiError {
   message: string;

@@ -675,7 +675,7 @@ curl http://localhost:8000/api/v1/system/health
 curl -H "X-API-Key: test-key" http://localhost:8000/api/v1/tenants/me
 
 # Check frontend
-curl http://localhost:5173
+curl https://zat-pri.vercel.app/
 ```
 
 See [`docs/SMOKE_TEST_COMMANDS.md`](docs/SMOKE_TEST_COMMANDS.md) for complete smoke test reference.

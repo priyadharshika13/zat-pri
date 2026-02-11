@@ -5,7 +5,7 @@ This guide provides manual testing steps for the ZATCA Setup functionality.
 ## Prerequisites
 
 1. Backend server running on `http://localhost:8000`
-2. Frontend server running on `http://localhost:5173`
+2. Frontend server running on `https://zat-pri.vercel.app/`
 3. Valid API key (default: `test-key`)
 
 ## Backend API Testing
@@ -149,10 +149,10 @@ curl -H "X-API-Key: test-key" http://localhost:8000/api/v1/zatca/status
 
 ### 1. Access ZATCA Setup Page
 
-1. Open browser: `http://localhost:5173`
+1. Open browser: `https://zat-pri.vercel.app/`
 2. Login with API key: `test-key`
 3. Navigate to "ZATCA Setup" from sidebar menu
-4. URL should be: `http://localhost:5173/#/zatca-setup`
+4. URL should be: `https://zat-pri.vercel.app//#/zatca-setup`
 
 ### 2. Test Status Display
 

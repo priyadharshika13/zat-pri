@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="uvicorn" />
+          <option value="gunicorn" />
+          <option value="pydantic-settings" />
+          <option value="email-validator" />
+          <option value="qrcode" />
+          <option value="python-multipart" />
+          <option value="cryptography" />
+          <option value="openai" />
+          <option value="alembic" />
+          <option value="psycopg2-binary" />
+          <option value="asyncpg" />
+          <option value="pytest" />
+          <option value="pytest-cov" />
+          <option value="pytest-asyncio" />
+          <option value="pytest-mock" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

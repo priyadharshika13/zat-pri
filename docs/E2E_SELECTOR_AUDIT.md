@@ -9,7 +9,7 @@
 
 ### Routing (HashRouter)
 
-- **Reality:** App uses `HashRouter`. All in-app routes are under hash: `http://localhost:5173/#/dashboard`, `/#/invoices`, `/#/login`, etc.
+- **Reality:** App uses `HashRouter`. All in-app routes are under hash: `https://zat-pri.vercel.app//#/dashboard`, `/#/invoices`, `/#/login`, etc.
 - **Impact:** Tests that used `page.goto('/dashboard')` without the hash never matched the real URL and could be flaky depending on how the app resolves paths.
 
 ### Authentication

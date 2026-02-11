@@ -44,7 +44,7 @@ npm install
 npm run dev
 ```
 
-**Frontend will run on:** `http://localhost:5173`
+**Frontend will run on:** `https://zat-pri.vercel.app/`
 
 ---
 
@@ -53,7 +53,7 @@ npm run dev
 Open your browser and navigate to:
 
 ```
-http://localhost:5173
+https://zat-pri.vercel.app/
 ```
 
 ---
@@ -87,7 +87,7 @@ http://localhost:5173
 
 ### 1. Login
 
-1. Navigate to `http://localhost:5173`
+1. Navigate to `https://zat-pri.vercel.app/`
 2. You'll be redirected to `/login` if not authenticated
 3. Enter your API key (stored in `localStorage`)
 4. Click "Login"
@@ -119,7 +119,7 @@ npm run dev
 ```
   VITE v5.0.8  ready in 500 ms
 
-  ➜  Local:   http://localhost:5173/
+  ➜  Local:   https://zat-pri.vercel.app//
   ➜  Network: use --host to expose
 ```
 
@@ -216,7 +216,7 @@ localStorage.removeItem('apiKey')
    ```
 
 3. **Browser:**
-   - Open `http://localhost:5173`
+   - Open `https://zat-pri.vercel.app/`
    - Make changes to frontend code
    - See hot-reload updates automatically
 
@@ -249,7 +249,7 @@ npm run preview
 
 | Service | Port | URL |
 |---------|------|-----|
-| **Frontend (Dev)** | 5173 | `http://localhost:5173` |
+| **Frontend (Dev)** | 5173 | `https://zat-pri.vercel.app/` |
 | **Backend (API)** | 8000 | `http://localhost:8000` |
 | **Backend Health** | 8000 | `http://localhost:8000/api/v1/system/health` |
 
@@ -268,7 +268,7 @@ cd frontend && npm run dev
 curl http://localhost:8000/api/v1/system/health
 
 # Open in browser
-# http://localhost:5173
+# https://zat-pri.vercel.app/
 ```
 
 ---
